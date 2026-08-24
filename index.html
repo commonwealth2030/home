@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Residence Registration</title>
 	<style>
-		:root { --ink:#18302b; --muted:#62736f; --paper:#f7f5ef; --surface:#fffdf8; --line:#d8e0d9; --accent:#d96c45; --accent-dark:#b94f2e; --focus:#2c7a6b; }
+		:root { --ink:#053371; --muted:#496384; --paper:#ffffff; --surface:#ffffff; --line:#cbd8e7; --accent:#E07320; --accent-dark:#b75a18; --focus:#053371; }
 		* { box-sizing:border-box; }
 		body { margin:0; min-height:100vh; color:var(--ink); background:var(--paper); font-family:Georgia,"Times New Roman",serif; }
 		main { width:min(100% - 32px,760px); margin:0 auto; padding:56px 0 72px; }
@@ -13,17 +13,17 @@
 		.eyebrow { margin:0 0 12px; color:var(--accent-dark); font:700 .76rem/1.2 Arial,sans-serif; letter-spacing:.12em; text-transform:uppercase; }
 		h1 { max-width:620px; margin:0; font-size:clamp(2.5rem,8vw,4.8rem); font-weight:400; line-height:.98; }
 		.intro p:last-child { max-width:520px; margin:20px 0 0; color:var(--muted); font-size:1.1rem; line-height:1.55; }
-		form { padding:clamp(24px,5vw,42px); border:1px solid var(--line); border-radius:8px; background:var(--surface); box-shadow:0 18px 45px rgba(24,48,43,.08); }
+		form { padding:clamp(24px,5vw,42px); border:1px solid var(--line); border-radius:8px; background:var(--surface); box-shadow:0 18px 45px rgba(5,51,113,.1); }
 		.fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 18px; }
 		.field { display:grid; gap:8px; } .field.full { grid-column:1 / -1; }
 		label { font:700 .82rem/1.2 Arial,sans-serif; letter-spacing:.04em; }
 		input,select { width:100%; min-height:50px; padding:12px 14px; border:1px solid var(--line); border-radius:4px; color:var(--ink); background:#fff; font:1rem Georgia,"Times New Roman",serif; }
-		input:focus,select:focus { border-color:var(--focus); outline:3px solid rgba(44,122,107,.16); }
+		input:focus,select:focus { border-color:var(--focus); outline:3px solid rgba(5,51,113,.16); }
 		.form-footer { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-top:32px; }
 		button { min-height:50px; padding:0 25px; border:0; border-radius:4px; color:#fff; background:var(--accent); cursor:pointer; font:700 .85rem Arial,sans-serif; letter-spacing:.04em; transition:background 160ms ease,transform 160ms ease; }
 		button:hover { background:var(--accent-dark); transform:translateY(-1px); } button:disabled { cursor:wait; opacity:.65; transform:none; }
 		#form-status { min-height:1.2em; margin:0; color:var(--muted); font:.9rem/1.4 Arial,sans-serif; }
-		#form-status.success { color:var(--focus); } #form-status.error { color:#a43e31; }
+		#form-status.success { color:var(--focus); } #form-status.error { color:#b75a18; }
 		@media (max-width:640px) {
 			main { width:min(100% - 24px, 520px); padding:32px 0 48px; }
 			h1 { font-size:clamp(2.45rem, 13vw, 3.8rem); }
